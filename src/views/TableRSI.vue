@@ -48,10 +48,11 @@
 
 export default {
     beforeCreate() {
-        
-    if (this.$cookies.get("username") == null) {
-      window.location.href = "/login/"
-    }
+            
+        if (this.$cookies.get("username") == null) {
+            router.push({ path: 'LoginPage' })
+
+        }
     },
     mounted() {
         this.getRsi()

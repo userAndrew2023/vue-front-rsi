@@ -23,9 +23,7 @@
 <script>
 export default {
   methods: {
-    href() {
-      router.push({ path: 'LoginPage' })
-    }
+    
   }
 }
 </script>
