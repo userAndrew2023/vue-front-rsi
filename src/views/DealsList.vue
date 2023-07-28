@@ -12,8 +12,6 @@
 
 <script>
 
-import router from '../router'
-
 export default {
 
     
@@ -21,7 +19,6 @@ export default {
         
         if (this.$cookies.get("username") == null) {
             window.location.href = "/login"
-
         }
     },
     data() {
