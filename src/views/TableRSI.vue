@@ -53,7 +53,7 @@ export default {
     beforeCreate() {
             
         if (this.$cookies.get("username") == null) {
-            router.push({ path: 'LoginPage' })
+            router.push({ path: '/login' })
 
         }
     },

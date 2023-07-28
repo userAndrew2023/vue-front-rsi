@@ -21,9 +21,14 @@
 </template>
 
 <script>
+
+import router from "../router"
+
 export default {
   methods: {
-    
+    href() {
+      router.push({ path: '/login' })
+    }
   }
 }
 </script>

@@ -12,13 +12,16 @@
 
 <script>
 
+import router from '../router'
+
 export default {
 
     
     beforeCreate() {
         
         if (this.$cookies.get("username") == null) {
-            window.location.href = "/login"
+            router.push({ path: '/login' })
+
         }
     },
     data() {
