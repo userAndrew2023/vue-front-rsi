@@ -58,18 +58,18 @@ export default {
     },
     methods: {
         getRsi() {
-            fetch("http://127.0.0.1:5000/get").then(res => res.json()).then(json => {
+            fetch("http://89.178.108.32:5000/get").then(res => res.json()).then(json => {
                     this.rsi = json
             });
             setInterval(() => {
-                fetch("http://127.0.0.1:5000/get").then(res => res.json()).then(json => {
+                fetch("http://89.178.108.32:5000/get").then(res => res.json()).then(json => {
                     this.rsi = json
                 });
 	}, 10000)
         },
         enteredQuantity(side, coin, quanity) {
             console.log(quanity, coin)
-            fetch("http://127.0.0.1:5000/placeOrder", {
+            fetch("http://89.178.108.32/placeOrder", {
                 method: "post",
                 headers: {
                     'Accept': 'application/json',

@@ -19,14 +19,14 @@ export default {
         }
     },
     mounted() {
-        fetch("http://127.0.0.1:5000/deals").then(response => response.json()).then(json => {
+        fetch("http://89.178.108.32:5000/deals").then(response => response.json()).then(json => {
             this.deals = json
         })
     },
     methods: {
         close_order(index) {
             delete this.deals[index]
-            fetch("127.0.0.1:5000/dealsRemove/" + index).then(response => response.json()).then(json => {
+            fetch("http://89.178.108.32/dealsRemove/" + index).then(response => response.json()).then(json => {
                 this.deals = json
             })
         }
