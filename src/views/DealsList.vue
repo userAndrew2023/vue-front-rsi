@@ -25,7 +25,7 @@ export default {
     },
     methods: {
         close_order(index) {
-            delete deals[index]
+            delete this.deals[index]
             fetch("127.0.0.1:5000/dealsRemove/" + index).then(response => response.json()).then(json => {
                 this.deals = json
             })
