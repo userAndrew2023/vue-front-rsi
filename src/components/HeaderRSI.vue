@@ -24,7 +24,7 @@
 export default {
   methods: {
     href() {
-      window.location.href = '/login'
+      router.push({ path: 'LoginPage' })
     }
   }
 }
