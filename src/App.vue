@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <HeaderRSI></HeaderRSI>
     <router-view></router-view>
   </div>
@@ -17,6 +17,9 @@ export default {
   data() {
     return {
     }
+  },
+  
+  created() {
   }
 }
 </script>

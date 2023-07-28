@@ -13,6 +13,14 @@
 <script>
 
 export default {
+
+    
+    beforeCreate() {
+        
+        if (this.$cookies.get("username") == null) {
+          window.location.href = "/login/"
+        }
+    },
     data() {
         return {
             deals: []

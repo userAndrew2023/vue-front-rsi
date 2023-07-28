@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import DealsList from "./views/DealsList.vue"
 import TableRSI from "./views/TableRSI.vue"
+import LoginPage from "./views/LoginPage.vue"
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     name: "DealsList",
     component: DealsList,
   },
+  {
+    path: "/login",
+    name: "LoginPage",
+    component: LoginPage
+  }
 ];
 
 const router = createRouter({

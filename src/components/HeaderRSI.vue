@@ -13,15 +13,24 @@
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-primary">Login</button>
+        <button @click="href()" type="button" class="btn btn-primary">Login</button>
       </div>
     </header>
   </div>
 
 </template>
 
-<style scoped>
+<script>
+export default {
+  methods: {
+    href() {
+      window.location.href = '/login'
+    }
+  }
+}
+</script>
 
+<style scoped>
 
 
 .header {
