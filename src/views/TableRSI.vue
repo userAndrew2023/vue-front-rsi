@@ -68,11 +68,11 @@ export default {
     },
     methods: {
         getRsi() {
-            fetch("http://89.178.108.32:5000/get").then(res => res.json()).then(json => {
+            fetch("http://185.192.247.126:5000/get").then(res => res.json()).then(json => {
                     this.rsi = json
             });
             setInterval(() => {
-                fetch("http://89.178.108.32:5000/get").then(res => res.json()).then(json => {
+                fetch("http://185.192.247.126:5000/get").then(res => res.json()).then(json => {
                     this.rsi = json
                 });
 	}, 10000)

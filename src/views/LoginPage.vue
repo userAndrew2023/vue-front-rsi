@@ -20,7 +20,7 @@
 export default {
     methods: {
         click() {
-            fetch("http://89.178.108.32:5000/login", {
+            fetch("http://185.192.247.126:5000/login", {
                 method: "POST",
                 headers: {
                     'Accept': 'application/json',
